@@ -1,0 +1,28 @@
+- site_name: "モンベル (montbell)"
+  base_url: "https://www.montbell.jp"
+
+  forms:
+    - form_name: "ID・パスワードの再設定"
+    - target_url: "https://www.montbell.jp/login/idpwremind.php"
+    - page_type: "パスワード再設定"
+    - fields:
+        - field_type: "氏名"
+          id: null
+          name: "member_name"
+          type: "text"
+          in_form: true
+          aria_labelled_by: 
+            - id: "member_name_label"
+            - label_text: "氏名<br>（漢字またはひらがな）"
+          onepassword_notes: "\"名 姓\"形式で自動入力される"
+
+        - field_type: "メールアドレス"
+          id: null
+          name: "member_mail_pc"
+          type: "text"
+          in_form: true
+          aria_labelled_by: 
+            - id: "member_email_label"
+            - label_text: "登録済みのEメール"
+          onepassword_notes: "プロフィールのメールアドレスが自動入力される。"
+        
